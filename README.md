@@ -7,7 +7,7 @@ National Human Genome Research Institute, National Institutes of Health (NIH).
 
 ---
 
-## 🧭 Overview
+## Overview
 
 This repository provides all analysis code and supporting scripts for evaluating how different **translation approaches**—Neural Machine Translation (NMT) and Large Language Model (LLM)-based translation—affect the ability of **LLMs** to recognize descriptions of genetic conditions across nearly 200 languages.
 
@@ -41,7 +41,7 @@ For full reproducibility, see `environment/requirements.txt`.
 
 ---
 
-## 🧮 1. Jaccard Similarity (`Jaccard.py`)
+## 1. Jaccard Similarity (`Jaccard.py`)
 
 **Purpose:** Quantify lexical similarity between two Excel columns (e.g., original vs. back-translated text).
 
@@ -60,7 +60,7 @@ python Jaccard.py   --input-dir path/to/folder   --sheet "After Exclusions"   --
 
 ---
 
-## 🧬 2. Phrase Retention Analysis (`Overlap.py`)
+## 2. Phrase Retention Analysis (`Overlap.py`)
 
 **Purpose:** Evaluate phrase-level retention from a reference Word document to translated Excel text.
 
@@ -85,7 +85,7 @@ python Overlap.py   --word-doc path/to/Descriptions.docx   --input-dir path/to/e
 
 ---
 
-## 🤖 3. Genetic Condition Prediction (`Predictions.py`)
+## 3. Genetic Condition Prediction (`Predictions.py`)
 
 **Purpose:** Perform large-scale inference using OpenAI models to predict genetic conditions from descriptions.
 
@@ -110,7 +110,7 @@ export OPENAI_API_KEY="your_api_key_here"
 
 ---
 
-## 📊 Workflow and Reproducibility
+## Workflow and Reproducibility
 
 1. Generate or collect translations.  
 2. Use `Jaccard.py` to measure translation fidelity.  
@@ -125,7 +125,7 @@ pip freeze > environment/requirements.txt
 
 ---
 
-## 🧠 Citation
+## Citation
 
 If you use this repository, please cite:
 
@@ -135,7 +135,7 @@ A `CITATION.cff` file is provided for automatic citation tools.
 
 ---
 
-## 🏛️ License
+## License
 
 This software was developed by employees of the **National Institutes of Health (NIH)** as part of their official duties and is a **work of the United States Government** (17 U.S.C. §105).  
 Accordingly, it is in the **public domain within the United States** and released under the **Creative Commons Zero (CC0 1.0 Universal)** dedication to ensure broad reuse worldwide.
@@ -144,7 +144,7 @@ See the [LICENSE](LICENSE) file for full terms.
 
 ---
 
-## 🧩 Acknowledgments
+## Acknowledgments
 
-Supported by the **Intramural Research Program** of the **National Human Genome Research Institute (NHGRI)**, National Institutes of Health.  
+This research was supported by the Intramural Research Program of the National Human Genome Research Institute of the National Institutes of Health. The contributions of the NIH author(s) were made as part of their official duties as NIH federal employees, are in compliance with agency policy requirements, and are considered Works of the United States Government. However, the findings and conclusions presented in this paper are those of the author(s) and do not necessarily reflect the views of the NIH or the U.S. Department of Health and Human Services.
 
