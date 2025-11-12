@@ -21,7 +21,7 @@ This repository provides all analysis code and supporting scripts for evaluating
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Requirements
 - **Python 3.10+**
