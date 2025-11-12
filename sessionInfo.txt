@@ -1,0 +1,2 @@
+Captured environment details (optional).
+Run `pip freeze > environment/requirements.txt` to update pins after successful runs.

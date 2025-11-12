@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it."
+title: "Translation & Genetic Condition Recognition Analyses"
+authors:
+  - family-names: Solomon
+    given-names: Benjamin D.
+version: "1.0.0"
+date-released: "2025-11-12"
+repository-code: "https://github.com/<your-username>/<your-repo>"
+license: "MIT"

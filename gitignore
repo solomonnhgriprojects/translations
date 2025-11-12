@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.env*
+pip-wheel-metadata/
+
+# Editors/OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Notebooks & checkpoints
+.ipynb_checkpoints/
+
+# Data & results (keep small derived files only)
+data/
+*.log
+results/*_predictions_partial.*
+results/*.tmp
+*.bak
+
+# Excel temp
+~$*.xlsx
