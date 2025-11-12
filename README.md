@@ -9,7 +9,7 @@ National Human Genome Research Institute, National Institutes of Health (NIH).
 
 ## Overview
 
-This repository provides all analysis code and supporting scripts for evaluating how different **translation approaches**—Neural Machine Translation (NMT) and Large Language Model (LLM)-based translation—affect the ability of **LLMs** to recognize descriptions of genetic conditions across nearly 200 languages.
+This repository provides all analysis code and supporting scripts for evaluating how different **translation approaches** (Neural Machine Translation (NMT) and Large Language Model (LLM)-based translation) affect the ability of **LLMs** to recognize descriptions of genetic conditions across many different languages.
 
 ### Included scripts
 
