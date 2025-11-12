@@ -147,5 +147,4 @@ See the [LICENSE](LICENSE) file for full terms.
 ## 🧩 Acknowledgments
 
 Supported by the **Intramural Research Program** of the **National Human Genome Research Institute (NHGRI)**, National Institutes of Health.  
-The author thanks NIH scientific computing teams for infrastructure support and the OpenAI research API for computational resources.
 
