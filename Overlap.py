@@ -21,7 +21,7 @@ Example:
   python phrase_retention_analysis.py \
       --word-doc path/to/HighlightedDescriptions.docx \
       --input-dir path/to/xlsx_dir \
-      --sheet "After Exclusions" \
+      --sheet "Main Data" \
       --col-a A --col-e E --col-g G \
       --col-h H --col-i I --col-j J --col-k K --col-l L \
       --out-suffix "_retained"
@@ -68,7 +68,7 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
     src.add_argument("--files", nargs="+", help="One or more .xlsx files to process.")
     src.add_argument("--input-dir", help="Directory containing .xlsx files to process.")
     p.add_argument("--word-doc", required=True, help="Path to the Word document (.docx) with highlights.")
-    p.add_argument("--sheet", default="After Exclusions", help="Worksheet name (default: 'After Exclusions').")
+    p.add_argument("--sheet", default="Main Data", help="Worksheet name (default: 'Main Data').")
 
     # Column mapping (letters or 0-based indices)
     p.add_argument("--col-a", default="A", help="Column with row IDs mapping to section order (default: A).")
@@ -439,3 +439,4 @@ def main(argv: List[str]) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main(sys.argv[1:]))
+
