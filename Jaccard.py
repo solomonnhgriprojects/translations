@@ -7,11 +7,11 @@ text normalization (lowercasing, punctuation removal, diacritics stripping, whit
 collapsing) and optional phonetic (Double Metaphone) and spell-correction passes.
 
 Usage examples:
-  # Process all .xlsx files in a folder, reading sheet "After Exclusions",
+  # Process all .xlsx files in a folder, reading sheet "Main Data",
   # comparing columns E and G, and writing similarity to column H:
   python jaccard_text_similarity.py \
       --input-dir path/to/folder \
-      --sheet "After Exclusions" \
+      --sheet "Main Data" \
       --col-a E --col-b G --col-out H
 
   # Process specific files and put output suffix "_jaccard":
@@ -250,7 +250,7 @@ def parse_args(argv: List[str]) -> argparse.Namespace:
     src.add_argument("--files", nargs="+", help="One or more .xlsx files to process.")
     src.add_argument("--input-dir", help="Directory containing .xlsx files to process.")
 
-    p.add_argument("--sheet", default="After Exclusions", help="Worksheet name (default: 'After Exclusions').")
+    p.add_argument("--sheet", default="Main Data", help="Worksheet name (default: 'Main Data').")
     p.add_argument("--col-a", default="E", help="First input column (letter(s) or 0-based index). Default: E")
     p.add_argument("--col-b", default="G", help="Second input column (letter(s) or 0-based index). Default: G")
     p.add_argument("--col-out", default="H", help="Output column for similarity (letter(s) or 0-based index). Default: H")
@@ -340,3 +340,4 @@ def main(argv: List[str]) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main(sys.argv[1:]))
+
