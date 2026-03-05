@@ -2,7 +2,7 @@
 
 This repository contains all code and documentation supporting the study:
 
-**Quantifying the Effects of Translation Methods on Large Language Model Recognition of Genetic Conditions.**  
+**Disparate language and model effects on AI-based translation and recognition of genetic conditions.**  
 National Human Genome Research Institute, National Institutes of Health (NIH).
 
 ---
